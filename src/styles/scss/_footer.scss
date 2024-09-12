@@ -1,0 +1,57 @@
+.container {
+  //   width: 70%;
+}
+.footer {
+  h5 {
+    color: #f0b419;
+  }
+  a {
+    color: white;
+  }
+  p {
+    color: white;
+  }
+}
+.contactno {
+  color: #f0b419 !important;
+  font-weight: bold;
+}
+
+// styles/footer.module.scss
+
+.footer-payment {
+  display: flex;
+  flex-direction: column; // Ensures the image and text are stacked vertically
+  align-items: center; // Centers items horizontally
+  justify-content: center; // Centers items vertically (if needed)
+  margin-top: 20px; // Adds space above the payment image
+  margin-bottom: 20px; // Adds space below the copyright text
+  text-align: center; // Ensures text is centered
+}
+
+.footer-payment img {
+  max-width: 100%; // Ensures the image scales properly
+  height: auto; // Maintains aspect ratio
+}
+
+.copyright {
+  font-family: "Noto Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #f2e2b9 !important;
+  margin-top: 10px; // Adds space between the image and the text
+}
+
+// styles/footer.module.scss
+
+// .right-icon {
+//   position: absolute;
+//   right: 141px;
+//   top: 62%;
+//   transform: translateY(-50%);
+//   display: flex;
+//   align-items: center;
+//   color: #f0b419; // Ensure the icon color matches the input
+// }
