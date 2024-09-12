@@ -1,0 +1,118 @@
+.customize-section {
+  padding: 2rem 0;
+  background-color: #161616;
+}
+
+.image-container {
+  width: 100%;
+  height: auto;
+  margin-right: 2rem; /* Adds space between the image and icon sections */
+}
+
+.heading-section {
+  margin-bottom: 2rem;
+}
+
+.main-heading {
+  font-weight: 600;
+  font-size: 48px;
+  color: #f2e2b9;
+}
+
+.subheading {
+  font-weight: 700;
+  font-size: 54px;
+  background: linear-gradient(270deg, #c89102 -202.05%, #624701 351.09%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Card Styling for Icons */
+.card {
+  border: none;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding: 1rem 0;
+  width: 100%;
+  min-width: 200px; /* Ensures the card has some minimum width */
+  max-width: 320px; /* Sets a maximum width for larger screens */
+}
+
+.card img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 1rem;
+}
+
+.card-heading {
+  font-size: 14px;
+  font-weight: bold;
+  color: #f0b419;
+  margin-bottom: 0.5rem;
+}
+
+.card-paragraph {
+  font-size: 10px;
+  color: #f2e2b9;
+}
+
+/* Icons Section Grid */
+.icons-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.col-md-4 {
+  display: flex;
+  align-items: stretch;
+}
+
+/* Additional margin to space out the image and icons sections */
+.col-md-6 {
+  padding-right: 1.5rem; /* Adds space between the image and icon sections on larger screens */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 28px;
+  }
+
+  .subheading {
+    font-size: 20px;
+  }
+
+  .icons-section .col-6 {
+    flex-basis: calc(50% - 1rem); /* 2 columns per row on smaller screens */
+  }
+
+  .card {
+    min-width: unset; /* Remove min-width for smaller screens */
+    max-width: 100%; /* Allow cards to take full width */
+  }
+
+  .card img {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* Adjust padding between sections for mobile */
+  .col-md-6 {
+    padding-right: 0;
+    margin-bottom: 1.5rem; /* Add spacing between sections on mobile */
+  }
+
+  /* Scale down the image on small screens */
+  .image-container {
+    margin-right: 0; /* Remove margin on small screens */
+  }
+
+  .image-container img {
+    width: 100%; /* Ensure the image scales down */
+    height: auto; /* Maintain aspect ratio */
+  }
+}

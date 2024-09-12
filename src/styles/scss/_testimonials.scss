@@ -31,17 +31,17 @@
 
     .message-div {
       max-width: 400px;
-      margin: 0 auto; /* Center the message */
+      margin: 0 auto;
       overflow: hidden;
       padding: 1rem 0;
     }
 
     .message {
       display: -webkit-box;
-      -webkit-line-clamp: 5; /* Limits the text to 5 lines */
+      -webkit-line-clamp: 5;
       -webkit-box-orient: vertical;
-      font-size: 16px; /* Smaller font size */
-      line-height: 1.4; /* Adjust line spacing for better readability */
+      font-size: 16px;
+      line-height: 1.4;
       color: #f2e2b9;
       margin-bottom: 1rem;
       text-overflow: ellipsis;
@@ -62,19 +62,24 @@
     .dots-navigation {
       display: flex;
       justify-content: center;
-      margin-top: 1rem; /* Adjust margin to place below the stars */
+      margin-top: 1rem;
+      padding: 0;
+      list-style: none;
 
       .dot {
-        width: 15px;
-        height: 15px;
+        width: 10px;
+        height: 10px;
         margin: 0 5px;
-        background-color: #f0b419;
+        background-color: #1e1e1e;
         border-radius: 50%;
         cursor: pointer;
-        transition: background-color 0.3s ease;
+        transition: width 0.3s ease, height 0.3s ease,
+          background-color 0.3s ease;
       }
 
       .dot.active {
+        width: 15px;
+        height: 15px;
         background-color: #f0b419;
       }
     }
@@ -102,7 +107,7 @@
 
       .message {
         font-size: 0.9rem;
-        -webkit-line-clamp: 4; /* Adjusts the line clamp to 4 lines for smaller screens */
+        -webkit-line-clamp: 4;
       }
     }
 

@@ -1,0 +1,86 @@
+.price-section {
+  background-color: #0d0d0d;
+
+  .price-headings {
+    /* Center-align headings if needed */
+  }
+
+  .heading-1 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 56.4px;
+    text-align: center;
+    color: #f2e2b9 !important;
+  }
+
+  .heading-2 {
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 75px;
+    text-align: center;
+    background: linear-gradient(270deg, #c89102 -202.05%, #624701 351.09%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.price-cards {
+  margin-top: 60px;
+
+  .row {
+    /* Ensures all rows are spaced consistently */
+    margin: 0 -15px; /* Adjust if using Bootstrap’s gutter */
+  }
+
+  .col {
+    display: flex;
+    justify-content: center; /* Center content */
+    margin-bottom: 30px;
+  }
+
+  .card {
+    background-color: #0a0a0a;
+    border: none;
+    padding: 30px; /* Adjust padding as needed */
+    height: 100%; /* Ensure cards stretch to the same height */
+    width: 100%;
+    max-height: 370px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space out content evenly */
+    // position: relative; /* Allow positioning of button */
+    margin: autos;
+  }
+
+  h6 {
+    font-size: 24px;
+    color: #f0b419;
+    margin-bottom: 1rem; /* Gap below the heading */
+  }
+
+  .price-para {
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      color: #f2e2b9;
+      margin-bottom: 1.5rem; /* Gap below the paragraph */
+    }
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%; /* Ensure it takes full height of card */
+    justify-content: space-between; /* Space content evenly */
+  }
+
+  .price-button {
+    background: linear-gradient(90deg, #c89102 0%, #624701 100%);
+    border: none;
+    color: white;
+    width: auto; /* Ensure button takes full width */
+    margin-top: auto; /* Pushes button to the bottom of card */
+    align-self: flex-start; /* Align button to the left */
+  }
+}

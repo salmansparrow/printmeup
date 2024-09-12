@@ -1,0 +1,145 @@
+.aisection {
+  background-color: black;
+}
+
+.section-heading {
+  text-align: center; /* Center text for better appearance on all screen sizes */
+  margin-bottom: 2rem; /* Add space below the section heading */
+}
+
+.section-heading h2 {
+  font-weight: 600;
+  font-size: 48px; /* Default font size */
+  color: #f2e2b9;
+}
+
+.section-heading h1 {
+  font-weight: 700;
+  background: linear-gradient(270deg, #c89102 -202.05%, #624701 351.09%);
+  -webkit-background-clip: text; /* Clips the background to the text */
+  -webkit-text-fill-color: transparent; /* Makes the text color transparent so the background shows through */
+}
+
+/* Responsive Design for Section Heading */
+@media (max-width: 992px) {
+  /* Medium screens */
+  .section-heading h2 {
+    font-size: 20px; /* Reduced font size for medium screens */
+  }
+
+  .section-heading h1 {
+    font-size: 20px; /* Reduced font size for medium screens */
+  }
+}
+
+@media (max-width: 576px) {
+  /* Small screens */
+  .section-heading h2 {
+    font-size: 20px; /* Further reduced font size for small screens */
+  }
+
+  .section-heading h1 {
+    font-size: 20px; /* Further reduced font size for small screens */
+  }
+}
+
+/* AI Card Styling */
+.ai-card {
+  display: flex;
+  align-items: center;
+  background-color: #161616;
+  border-radius: 60px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  flex-direction: row; /* Default to row layout */
+}
+
+/* Card Number Styling */
+.ai-card-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 40px;
+  color: #f2e2b9;
+  background-color: #c89102;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+/* Card Text Styling */
+.ai-card-text {
+  flex: 1;
+}
+
+.ai-card-heading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #f2e2b9;
+  margin-bottom: 0.5rem;
+}
+
+.ai-card-paragraph {
+  font-size: 14px;
+  color: #f2e2b9;
+}
+
+/* Responsive Design for AI Card */
+@media (max-width: 992px) {
+  /* Medium screens */
+  .ai-card {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
+    text-align: center; /* Center text */
+  }
+
+  .ai-card-number {
+    width: 80px;
+    height: 80px;
+    font-size: 30px;
+    margin-right: 0; /* Remove margin for vertical stacking */
+    margin-bottom: 1rem; /* Space between number and text */
+  }
+
+  .ai-card-heading {
+    font-size: 16px;
+  }
+
+  .ai-card-paragraph {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  /* Small screens */
+  .ai-card-number {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  .ai-card-heading {
+    font-size: 14px;
+  }
+
+  .ai-card-paragraph {
+    font-size: 10px;
+  }
+}
+
+/* Responsive Design for Image Container */
+.image-container {
+  width: 100%; /* Full width of the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media (max-width: 576px) {
+  /* Small screens */
+  .image-container {
+    padding: 0.5rem; /* Add some padding for small screens */
+  }
+}

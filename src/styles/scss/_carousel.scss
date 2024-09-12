@@ -1,0 +1,98 @@
+.carousel-accordion {
+  display: flex;
+  flex-wrap: wrap; /* Wrap buttons if they don't fit in one line */
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.category-btn {
+  padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+  background-color: black;
+  border: 2px solid #c89102;
+  color: #fff;
+  margin: 0.5rem; /* Ensure some space between buttons */
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+  border-radius: 14px;
+}
+
+.category-btn.active {
+  background: linear-gradient(90deg, #c89102 0%, #624701 100%);
+  color: #fff;
+  border: transparent; /* Hide border by setting it to transparent */
+}
+
+.carousel-section {
+  background-color: black;
+  padding: 2rem;
+  text-align: center;
+}
+
+.carousel-heading {
+  color: #f2e2b9;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  font-size: 2rem; /* Adjust for smaller screens */
+}
+
+.carousel-heading2 {
+  font-weight: 700;
+  font-size: 2.5rem; /* Adjust for smaller screens */
+  margin-bottom: 1rem;
+  background: linear-gradient(270deg, #c89102 -202.05%, #624701 351.09%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.carousel-para {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 0 1rem; /* Padding for smaller screens */
+
+  p {
+    font-weight: 400;
+    font-size: 1rem; /* Slightly smaller size for better readability on smaller screens */
+    color: #f2e2b9;
+    margin-bottom: 2rem;
+  }
+}
+.carousel-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.image-container {
+  flex: 1 1 calc(50% - 2rem); /* Two images per row with space */
+  margin: 0.5rem;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .carousel-images {
+    flex-direction: column; /* Single column on mobile */
+  }
+
+  .image-container {
+    flex: 1 1 100%; /* Full width on mobile */
+  }
+
+  .category-btn {
+    padding: 0.5rem; /* Smaller padding for mobile */
+    margin: 0.25rem; /* Smaller margin for mobile */
+  }
+
+  .carousel-heading {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+  }
+
+  .carousel-heading2 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+  }
+
+  p {
+    font-size: 0.875rem; /* Adjust font size for smaller screens */
+  }
+}
