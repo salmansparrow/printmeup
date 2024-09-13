@@ -14,6 +14,7 @@ function Customize() {
           <div className="col-md-6">
             <div className="image-container">
               <Image
+                className="card-image"
                 src="/images/customize/image.svg" // Replace with your image path
                 alt="Customizable Image"
                 layout="responsive"
@@ -34,8 +35,12 @@ function Customize() {
             {/* Icons Section - 3x3 Grid */}
             <div className="icons-section row">
               <div className="col-md-4 col-6">
-                <div className="card">
-                  <Image src={charges} alt="No Hidden Charges" />
+                <div className="customize-card">
+                  <Image
+                    className="card-image"
+                    src={charges}
+                    alt="No Hidden Charges"
+                  />
                   <h6 className="card-heading">
                     No Hidden Charges - Get the Best Deal
                   </h6>
@@ -50,8 +55,12 @@ function Customize() {
 
               {/* High Quality Printing */}
               <div className="col-md-4 col-6">
-                <div className="card">
-                  <Image src={print} alt="High Quality Printing" />
+                <div className="customize-card">
+                  <Image
+                    className="card-image"
+                    src={print}
+                    alt="High Quality Printing"
+                  />
                   <h6 className="card-heading">High Quality Printing</h6>
                   <p className="card-paragraph">
                     Experience the durability and longevity of DTF printing on
@@ -61,8 +70,12 @@ function Customize() {
               </div>
               {/* Secure Payment */}
               <div className="col-md-4 col-6">
-                <div className="card">
-                  <Image src={payment} alt="Secure Payment" />
+                <div className="customize-card">
+                  <Image
+                    className="card-image"
+                    src={payment}
+                    alt="Secure Payment"
+                  />
                   <h6 className="card-heading">Secure Payment</h6>
                   <p className="card-paragraph">
                     Shop with confidence at PrintMeUp. Our secure payment
@@ -74,8 +87,12 @@ function Customize() {
 
               {/* Custom Size & Style */}
               <div className="col-md-4 col-6">
-                <div className="card">
-                  <Image src={sizestyle} alt="Custom Size & Style" />
+                <div className="customize-card">
+                  <Image
+                    className="card-image"
+                    src={sizestyle}
+                    alt="Custom Size & Style"
+                  />
                   <h6 className="card-heading">Custom Size & Style</h6>
                   <p className="card-paragraph">
                     Find the perfect fit. Choose from a wide range of sizes and
@@ -87,8 +104,12 @@ function Customize() {
 
               {/* Fast Delivery */}
               <div className="col-md-4 col-6">
-                <div className="card">
-                  <Image src={delivery} alt="Fast Delivery" />
+                <div className="customize-card">
+                  <Image
+                    className="card-image"
+                    src={delivery}
+                    alt="Fast Delivery"
+                  />
                   <h6 className="card-heading">Fast Delivery</h6>
                   <p className="card-paragraph">
                     Enjoy the convenience of fast delivery. Receive your custom
@@ -99,8 +120,12 @@ function Customize() {
 
               {/* Low Minimum Order */}
               <div className="col-md-4 col-6">
-                <div className="card">
-                  <Image src={order} alt="Low Minimum Order" />
+                <div className="customize-card">
+                  <Image
+                    className="card-image"
+                    src={order}
+                    alt="Low Minimum Order"
+                  />
                   <h6 className="card-heading">Low Minimum Order</h6>
                   <p className="card-paragraph">
                     Order with ease at PrintMeUp. Our low minimum order

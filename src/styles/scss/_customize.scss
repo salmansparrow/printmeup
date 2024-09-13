@@ -28,7 +28,7 @@
 }
 
 /* Card Styling for Icons */
-.card {
+.customize-card {
   border: none;
   background-color: transparent;
   display: flex;
@@ -41,7 +41,7 @@
   max-width: 320px; /* Sets a maximum width for larger screens */
 }
 
-.card img {
+.card-image {
   width: 24px;
   height: 24px;
   margin-bottom: 1rem;
@@ -90,12 +90,12 @@
     flex-basis: calc(50% - 1rem); /* 2 columns per row on smaller screens */
   }
 
-  .card {
+  .customize-card {
     min-width: unset; /* Remove min-width for smaller screens */
     max-width: 100%; /* Allow cards to take full width */
   }
 
-  .card img {
+  .card-image {
     width: 24px;
     height: 24px;
   }

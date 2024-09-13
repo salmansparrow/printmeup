@@ -1,0 +1,126 @@
+/* Navbar container styling */
+.navbar-main {
+  background-color: #000; /* Black background */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: auto; /* Let the width be auto to shrink-wrap the content */
+  max-width: 1000px; /* Only take the required width */
+  margin: 0 auto; /* Center horizontally */
+  z-index: 1000; /* Ensures Navbar is on top */
+  justify-content: space-between;
+  border-radius: 60px;
+  padding: 10px 10px; /* Add padding for some breathing space */
+}
+
+/* Flex container for logo and toggler */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Navbar links */
+.navbar-nav {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+}
+
+/* Add spacing between nav items */
+.nav-item {
+  margin: 0 10px; /* Spacing between the nav items */
+}
+
+/* Add space around the brand logo */
+.navbar-brand {
+  margin-right: 30px; /* Adjust this value to control space */
+}
+
+/* Toggler adjustments to keep it on the right */
+.navbar-toggler {
+  margin-left: auto;
+}
+
+/* Button styling and spacing for 'Get Started' */
+.get-started {
+  padding: 10px 20px !important;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #c89102 0%, #624701 100%);
+  color: white;
+  height: 40px;
+  margin-left: 30px; /* Add margin to the left to create space */
+  white-space: nowrap; /* Prevent text wrapping inside the button */
+  display: inline-block;
+}
+
+/* Media queries to handle small screen behavior */
+@media (max-width: 768px) {
+  .navbar-main {
+    max-width: 100%; /* Ensure the navbar takes the full width on smaller screens */
+    border-radius: 0;
+  }
+
+  /* Keep the "Get Started" button small on smaller screens */
+  .get-started {
+    margin-left: auto;
+    padding: 8px 15px;
+    font-size: 14px;
+    height: auto; /* Allow height to adjust */
+    margin-right: 10px; /* Add some space on the right */
+  }
+
+  .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .nav-item {
+    margin: 10px 0; /* Vertical spacing between items on small screens */
+  }
+}
+
+/* Navbar link styling */
+.nav-link {
+  position: relative;
+  color: rgba(255, 255, 255, 0.8); /* White with some transparency */
+  text-decoration: none; /* Remove default underline */
+  padding: 10px 0; /* Space around the link */
+  font-weight: 600;
+}
+
+/* Inactive nav-link styling */
+.nav-link::after {
+  content: "•"; /* Add a dot */
+  color: rgba(242, 226, 185, 1); /* White dot */
+  font-size: 10px; /* Size of the dot */
+  position: absolute;
+  bottom: 0; /* Place it at the bottom of the link */
+  left: 50%; /* Center the dot horizontally */
+  transform: translateX(-50%); /* Adjust positioning */
+  opacity: 0.6; /* Slightly transparent */
+}
+
+/* Remove dot when active and apply gradient underline */
+.nav-link.active::after {
+  content: ""; /* Remove the dot */
+  position: absolute;
+  width: 20px; /* Set the desired width for the underline */
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    #c89102 0%,
+    #624701 100%
+  ); /* Gradient underline */
+  bottom: 4px; /* Adjust based on your design */
+  left: 50%; /* Center the underline */
+  transform: translateX(-50%); /* Ensure the underline is centered */
+  opacity: 1; /* Fully visible */
+}
+
+/* Hover effect for non-active links */
+.nav-link:hover::after {
+  opacity: 1; /* Fully visible on hover */
+}

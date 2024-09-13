@@ -1,0 +1,124 @@
+/* Hero Section Styling */
+.hero-section {
+  background: rgba(22, 22, 22, 1); /* Background color */
+  padding: 5rem 1rem; /* Add padding to top and bottom */
+  position: relative;
+}
+.content {
+  margin-top: 5rem;
+}
+.hero-heading-1,
+.hero-heading-3 {
+  font-size: calc(1.5rem + 4vw); /* Responsive size for headings */
+  margin: 0;
+  font-weight: 600;
+  color: rgba(242, 226, 185, 1);
+}
+
+.hero-heading-2 {
+  font-size: calc(2rem + 6vw); /* Larger size for the second heading */
+  font-weight: 700;
+  margin: 0;
+  background: linear-gradient(270deg, #c89102 -202.05%, #624701 351.09%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-paragraphs-container {
+  max-width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; /* Center the paragraphs container */
+}
+
+.hero-paragraphs {
+  max-width: auto; /* Limit the width to match heading width */
+  margin-top: 1rem; /* Space above paragraphs */
+  display: flex;
+  flex-wrap: wrap; /* Allow paragraphs to wrap */
+  justify-content: space-between; /* Spread paragraphs inline */
+}
+
+.hero-paragraph {
+  font-size: calc(0.8rem + 0.5vw); /* Responsive size for paragraphs */
+  font-weight: 600;
+  flex: 1; /* Allow paragraphs to grow and shrink */
+  margin: 0;
+  color: rgba(242, 226, 185, 1);
+  text-align: center; /* Center the text in each paragraph */
+  padding: 0 1rem; /* Add padding for spacing */
+}
+
+.hero-form {
+  display: flex;
+  justify-content: center; /* Center the input and button */
+  gap: 1rem; /* Space between input and button */
+  margin-top: 2rem; /* Space above form */
+}
+/* Input field with button inside */
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.form-control {
+  width: 100%;
+  padding-right: 120px; /* Space for the button */
+  height: 60px; /* Adjust input height */
+  font-size: 16px;
+  background-color: black;
+  border-radius: 30px;
+}
+.form-control::placeholder {
+  color: rgba(242, 226, 185, 1);
+  opacity: 1;
+}
+
+.btn-inside-input {
+  position: absolute;
+  right: 20px; /* Space between button and input border */
+  top: 50%;
+  transform: translateY(-50%);
+  height: 40px;
+  padding: 0px 20px;
+  background: linear-gradient(
+    90deg,
+    #c89102 0%,
+    #624701 100%
+  ); /* Button background color */
+  color: white;
+  border: 1px rgba(242, 226, 185, 0.2); /* Add border */
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.btn-inside-input:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-heading-1,
+  .hero-heading-2,
+  .hero-heading-3 {
+    font-size: calc(
+      1.2rem + 4vw
+    ); /* Adjust heading sizes for smaller screens */
+  }
+
+  .hero-paragraph {
+    font-size: calc(
+      0.7rem + 0.5vw
+    ); /* Adjust paragraph size for smaller screens */
+  }
+
+  .hero-paragraphs {
+    flex-direction: column; /* Stack paragraphs vertically on small screens */
+    align-items: center; /* Center paragraphs */
+  }
+}

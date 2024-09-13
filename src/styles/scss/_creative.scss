@@ -1,0 +1,176 @@
+.creative-section {
+  background-color: #0d0d0d;
+  padding: 2rem 0;
+}
+
+.creative-heading h2 {
+  font-weight: 600;
+  //   font-size: 48px; /* Default size */
+  line-height: 56px;
+  color: #f2e2b9;
+}
+
+.creative-heading h1 {
+  font-weight: 700;
+  //   font-size: 54px; /* Default size */
+  line-height: 63px;
+  background: linear-gradient(270deg, #c89102 -202.05%, #624701 351.09%);
+  -webkit-background-clip: text; /* Clip the background to the text */
+  -webkit-text-fill-color: transparent; /* Make text color transparent to show the background gradient */
+}
+
+.creative-para {
+  max-width: 800px; /* Limit width of paragraph */
+  margin: 1.5rem auto; /* Center the paragraph with some margin */
+  font-weight: 400;
+  //   font-size: 20px; /* Default size */
+  line-height: 1.6;
+  color: #f2e2b9;
+  text-align: center;
+}
+
+/* Responsive Design for Medium Screens */
+@media (max-width: 992px) {
+  .creative-heading h2 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .creative-heading h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .creative-para {
+    font-size: 18px;
+    max-width: 700px; /* Reduce width for medium screens */
+  }
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 576px) {
+  .creative-heading h2 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .creative-heading h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .creative-para {
+    font-size: 16px;
+    max-width: 90%; /* Allow it to take up 90% of the screen width */
+  }
+}
+
+.creative-cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem; /* Space between the cards */
+  margin-top: 2rem;
+}
+
+/* Card Styling */
+.card {
+  width: 400px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 2rem;
+  color: #f2e2b9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Apply staggered positioning for each card */
+.card:nth-child(2) {
+  margin-top: 50px; /* Adjust this value to control the downward shift */
+}
+
+.card:nth-child(3) {
+  margin-top: 20px; /* Adjust this value to control the downward shift */
+}
+
+.card h5 {
+  color: rgba(242, 226, 185, 1);
+}
+
+.card h3 {
+  background: linear-gradient(270deg, #c89102 -202.05%, #624701 351.09%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.card p {
+  color: rgba(242, 226, 185, 1);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Icon container to position the icon and number */
+.card-icon-container {
+  //   position: relative;
+  display: flex;
+  align-items: center; /* Vertically align icon and number */
+  margin-bottom: 1rem;
+}
+/* Circle background for icon */
+.icon-bg {
+  background: #161616;
+  width: 60px; /* Size of the circle */
+  height: 60px;
+  border-radius: 50%; /* Make it round */
+  display: flex;
+  justify-content: center; /* Center icon horizontally */
+  align-items: center; /* Center icon vertically */
+  margin-right: 1rem; /* Space between the icon and the number */
+}
+
+/* Icon inside the circle */
+.card-icons {
+  width: 30px; /* Icon size */
+  height: 30px;
+}
+
+.card-number {
+  margin-left: 10rem; /* Space between icon and number */
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7); /* Background behind the number */
+}
+
+/* Responsive Design */
+
+/* Medium screens (tablets) */
+@media (max-width: 992px) {
+  .card {
+    width: 100%; /* Cards take up full width */
+  }
+}
+
+/* Small screens (phones) */
+@media (max-width: 576px) {
+  .creative-heading h2,
+  .creative-heading h1 {
+    font-size: 24px; /* Adjust heading sizes */
+  }
+
+  .creative-para {
+    font-size: 16px; /* Adjust paragraph size */
+  }
+
+  .card {
+    width: 100%; /* Full width for cards on small screens */
+    margin-bottom: 1.5rem; /* Add space between cards */
+  }
+
+  .card-number {
+    font-size: 18px; /* Make the number smaller on small screens */
+  }
+}

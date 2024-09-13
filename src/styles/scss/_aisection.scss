@@ -3,43 +3,40 @@
 }
 
 .section-heading {
-  text-align: center; /* Center text for better appearance on all screen sizes */
-  margin-bottom: 2rem; /* Add space below the section heading */
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
 .section-heading h2 {
   font-weight: 600;
-  font-size: 48px; /* Default font size */
+  font-size: 48px;
   color: #f2e2b9;
 }
 
 .section-heading h1 {
   font-weight: 700;
   background: linear-gradient(270deg, #c89102 -202.05%, #624701 351.09%);
-  -webkit-background-clip: text; /* Clips the background to the text */
-  -webkit-text-fill-color: transparent; /* Makes the text color transparent so the background shows through */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-/* Responsive Design for Section Heading */
 @media (max-width: 992px) {
-  /* Medium screens */
   .section-heading h2 {
-    font-size: 20px; /* Reduced font size for medium screens */
+    font-size: 28px;
   }
 
   .section-heading h1 {
-    font-size: 20px; /* Reduced font size for medium screens */
+    font-size: 36px;
   }
 }
 
 @media (max-width: 576px) {
-  /* Small screens */
   .section-heading h2 {
-    font-size: 20px; /* Further reduced font size for small screens */
+    font-size: 20px;
   }
 
   .section-heading h1 {
-    font-size: 20px; /* Further reduced font size for small screens */
+    font-size: 24px;
   }
 }
 
@@ -48,14 +45,12 @@
   display: flex;
   align-items: center;
   background-color: #161616;
-  border-radius: 60px;
-  padding: 1rem;
+  border-radius: 40px; /* Rounded rectangle shape */
+  padding: 12px;
   margin-bottom: 1.5rem;
-  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-  flex-direction: row; /* Default to row layout */
+  flex-direction: row;
 }
 
-/* Card Number Styling */
 .ai-card-number {
   display: flex;
   justify-content: center;
@@ -71,7 +66,6 @@
   flex-shrink: 0;
 }
 
-/* Card Text Styling */
 .ai-card-text {
   flex: 1;
 }
@@ -90,19 +84,19 @@
 
 /* Responsive Design for AI Card */
 @media (max-width: 992px) {
-  /* Medium screens */
   .ai-card {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center items */
-    text-align: center; /* Center text */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px; /* More rounded on smaller screens */
   }
 
   .ai-card-number {
     width: 80px;
     height: 80px;
     font-size: 30px;
-    margin-right: 0; /* Remove margin for vertical stacking */
-    margin-bottom: 1rem; /* Space between number and text */
+    margin-right: 0;
+    margin-bottom: 1rem;
   }
 
   .ai-card-heading {
@@ -115,7 +109,11 @@
 }
 
 @media (max-width: 576px) {
-  /* Small screens */
+  .ai-card {
+    border-radius: 15px;
+    padding: 1.5rem;
+  }
+
   .ai-card-number {
     width: 60px;
     height: 60px;
@@ -133,13 +131,18 @@
 
 /* Responsive Design for Image Container */
 .image-container {
-  width: 100%; /* Full width of the container */
-  height: auto; /* Maintain aspect ratio */
+  width: 100%;
+  height: auto;
+  order: 2; /* Default order */
 }
 
 @media (max-width: 576px) {
-  /* Small screens */
+  .cards-container {
+    order: 1; /* Ensure cards are above image */
+  }
+
   .image-container {
-    padding: 0.5rem; /* Add some padding for small screens */
+    order: 2; /* Move image below cards */
+    margin-top: 2rem;
   }
 }
