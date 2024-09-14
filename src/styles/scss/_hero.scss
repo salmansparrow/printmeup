@@ -4,15 +4,20 @@
   padding: 5rem 1rem; /* Add padding to top and bottom */
   position: relative;
 }
+
 .content {
   margin-top: 5rem;
 }
+
+/* Responsive Hero Headings */
 .hero-heading-1,
 .hero-heading-3 {
   font-size: calc(1.5rem + 4vw); /* Responsive size for headings */
   margin: 0;
   font-weight: 600;
   color: rgba(242, 226, 185, 1);
+  white-space: nowrap; /* Prevent text wrapping */
+  text-align: center;
 }
 
 .hero-heading-2 {
@@ -22,8 +27,44 @@
   background: linear-gradient(270deg, #c89102 -202.05%, #624701 351.09%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  white-space: nowrap; /* Prevent text wrapping */
+  text-align: center;
 }
 
+/* Media queries for further adjustments on smaller screens */
+@media (max-width: 1200px) {
+  .hero-heading-1,
+  .hero-heading-2,
+  .hero-heading-3 {
+    font-size: calc(1.3rem + 3vw);
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-heading-1,
+  .hero-heading-2,
+  .hero-heading-3 {
+    font-size: calc(1.2rem + 3vw);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-heading-1,
+  .hero-heading-2,
+  .hero-heading-3 {
+    font-size: calc(1.1rem + 2.5vw);
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-heading-1,
+  .hero-heading-2,
+  .hero-heading-3 {
+    font-size: calc(1rem + 2vw);
+  }
+}
+
+/* Responsive Hero Paragraphs */
 .hero-paragraphs-container {
   max-width: 100%;
   margin: 0 auto;
@@ -32,30 +73,42 @@
 }
 
 .hero-paragraphs {
-  max-width: auto; /* Limit the width to match heading width */
-  margin-top: 1rem; /* Space above paragraphs */
+  max-width: auto;
+  margin-top: 1rem;
   display: flex;
-  flex-wrap: wrap; /* Allow paragraphs to wrap */
-  justify-content: space-between; /* Spread paragraphs inline */
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .hero-paragraph {
-  font-size: calc(0.8rem + 0.5vw); /* Responsive size for paragraphs */
+  font-size: calc(0.8rem + 0.5vw);
   font-weight: 600;
-  flex: 1; /* Allow paragraphs to grow and shrink */
+  flex: 1;
   margin: 0;
   color: rgba(242, 226, 185, 1);
-  text-align: center; /* Center the text in each paragraph */
-  padding: 0 1rem; /* Add padding for spacing */
+  text-align: center;
+  padding: 0 1rem;
 }
 
+@media (max-width: 768px) {
+  .hero-paragraph {
+    font-size: calc(0.7rem + 0.5vw);
+  }
+
+  .hero-paragraphs {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Hero Form */
 .hero-form {
   display: flex;
-  justify-content: center; /* Center the input and button */
-  gap: 1rem; /* Space between input and button */
-  margin-top: 2rem; /* Space above form */
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
 }
-/* Input field with button inside */
+
 .input-container {
   position: relative;
   display: flex;
@@ -68,12 +121,13 @@
 
 .form-control {
   width: 100%;
-  padding-right: 120px; /* Space for the button */
-  height: 60px; /* Adjust input height */
+  padding-right: 120px;
+  height: 60px;
   font-size: 16px;
   background-color: black;
   border-radius: 30px;
 }
+
 .form-control::placeholder {
   color: rgba(242, 226, 185, 1);
   opacity: 1;
@@ -81,44 +135,18 @@
 
 .btn-inside-input {
   position: absolute;
-  right: 20px; /* Space between button and input border */
+  right: 20px;
   top: 50%;
   transform: translateY(-50%);
   height: 40px;
   padding: 0px 20px;
-  background: linear-gradient(
-    90deg,
-    #c89102 0%,
-    #624701 100%
-  ); /* Button background color */
+  background: linear-gradient(90deg, #c89102 0%, #624701 100%);
   color: white;
-  border: 1px rgba(242, 226, 185, 0.2); /* Add border */
+  border: 1px rgba(242, 226, 185, 0.2);
   border-radius: 15px;
   cursor: pointer;
 }
 
 .btn-inside-input:hover {
   background-color: #0056b3;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .hero-heading-1,
-  .hero-heading-2,
-  .hero-heading-3 {
-    font-size: calc(
-      1.2rem + 4vw
-    ); /* Adjust heading sizes for smaller screens */
-  }
-
-  .hero-paragraph {
-    font-size: calc(
-      0.7rem + 0.5vw
-    ); /* Adjust paragraph size for smaller screens */
-  }
-
-  .hero-paragraphs {
-    flex-direction: column; /* Stack paragraphs vertically on small screens */
-    align-items: center; /* Center paragraphs */
-  }
 }

@@ -16,7 +16,7 @@ function HomePage() {
         <AiSection />
         <Customize />
         <Price />
-        {/* <Carousel /> */}
+        <Carousel />
         <Testimonials />
       </Layout>
     </>

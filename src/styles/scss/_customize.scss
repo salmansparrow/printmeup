@@ -1,5 +1,5 @@
 .customize-section {
-  padding: 2rem 0;
+  padding: 50px 0;
   background-color: #161616;
 }
 
@@ -13,18 +13,26 @@
   margin-bottom: 2rem;
 }
 
+/* Main Heading (Responsive) */
 .main-heading {
   font-weight: 600;
   font-size: 48px;
+  line-height: 1.2;
   color: #f2e2b9;
+  text-align: center;
+  white-space: nowrap; /* Prevents breaking onto multiple lines */
 }
 
+/* Subheading (Responsive) */
 .subheading {
   font-weight: 700;
   font-size: 54px;
+  line-height: 1.2;
+  text-align: center;
   background: linear-gradient(270deg, #c89102 -202.05%, #624701 351.09%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  white-space: nowrap; /* Prevents breaking onto multiple lines */
 }
 
 /* Card Styling for Icons */
@@ -77,13 +85,40 @@
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .main-heading {
-    font-size: 28px;
+    font-size: 36px; /* Adjust font size for medium screens */
+    white-space: normal; /* Allows text to break onto multiple lines if needed */
   }
 
   .subheading {
-    font-size: 20px;
+    font-size: 32px; /* Smaller subheading for medium screens */
+    white-space: normal; /* Allows text to break onto multiple lines if needed */
+  }
+
+  .icons-section .col-md-4 {
+    flex-basis: calc(50% - 1rem); /* 2 columns per row on smaller screens */
+  }
+
+  .card-image {
+    width: 20px; /* Slightly smaller icon for medium screens */
+    height: 20px;
+  }
+
+  .customize-card {
+    max-width: 280px; /* Limit the width of the card */
+  }
+}
+
+@media (max-width: 768px) {
+  .main-heading {
+    font-size: 28px; /* Smaller heading for mobile */
+    text-align: center; /* Center the text on mobile */
+  }
+
+  .subheading {
+    font-size: 24px; /* Smaller subheading for mobile */
+    text-align: center;
   }
 
   .icons-section .col-6 {
@@ -96,13 +131,12 @@
   }
 
   .card-image {
-    width: 24px;
-    height: 24px;
+    width: 18px; /* Smaller icon size for mobile */
+    height: 18px;
   }
 
   /* Adjust padding between sections for mobile */
   .col-md-6 {
-    padding-right: 0;
     margin-bottom: 1.5rem; /* Add spacing between sections on mobile */
   }
 
@@ -114,5 +148,16 @@
   .image-container img {
     width: 100%; /* Ensure the image scales down */
     height: auto; /* Maintain aspect ratio */
+  }
+}
+
+/* Large Screens Adjustments (Optional) */
+@media (min-width: 1200px) {
+  .main-heading {
+    font-size: 56px; /* Larger font size for bigger screens */
+  }
+
+  .subheading {
+    font-size: 64px; /* Larger font size for bigger screens */
   }
 }
