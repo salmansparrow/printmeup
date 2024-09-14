@@ -79,18 +79,41 @@ function Carousel() {
 
         {/* Carousel Images */}
         <div className="carousel-images">
-          {imagesData[activeCategory].map((image) => (
-            <div key={image.id} className="image-container">
-              <Image
-                src={image.src}
-                alt={image.alt} // Ensure alt text is provided
-                layout="responsive"
-                height={1000}
-                width={400}
-                objectFit="fit" // Ensures that the image fits within its container without distortion
-              />
-            </div>
-          ))}
+          <div className="image-row">
+            {/* First Row: 2 Images */}
+            {imagesData[activeCategory].slice(0, 2).map((image, index) => (
+              <div
+                key={image.id}
+                className={`image-container ${
+                  index === 0 ? "first-image" : ""
+                }`}
+              >
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  layout="responsive"
+                  height={index === 0 ? 400 : 200} // Adjust height for first image
+                  width={index === 0 ? 400 : 400}
+                  objectFit="cover"
+                />
+              </div>
+            ))}
+          </div>
+          <div className="image-row">
+            {/* Second Row: 3 Square Images */}
+            {imagesData[activeCategory].slice(2, 5).map((image) => (
+              <div key={image.id} className="image-container">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  layout="responsive"
+                  height={200}
+                  width={200}
+                  objectFit="cover"
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
     </>

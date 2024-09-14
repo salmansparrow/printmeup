@@ -16,8 +16,8 @@
 .section-heading h1 {
   font-weight: 700;
   background: linear-gradient(270deg, #c89102 -202.05%, #624701 351.09%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 @media (max-width: 992px) {
@@ -130,7 +130,7 @@
 }
 
 /* Responsive Design for Image Container */
-.image-container {
+.ai-image-container {
   width: 100%;
   height: auto;
   order: 2; /* Default order */
@@ -141,7 +141,7 @@
     order: 1; /* Ensure cards are above image */
   }
 
-  .image-container {
+  .ai-image-container {
     order: 2; /* Move image below cards */
     margin-top: 2rem;
   }

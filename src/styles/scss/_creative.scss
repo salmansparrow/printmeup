@@ -15,8 +15,8 @@
   //   font-size: 54px; /* Default size */
   line-height: 63px;
   background: linear-gradient(270deg, #c89102 -202.05%, #624701 351.09%);
-  -webkit-background-clip: text; /* Clip the background to the text */
-  -webkit-text-fill-color: transparent; /* Make text color transparent to show the background gradient */
+  background-clip: text;
+  color: transparent;
 }
 
 .creative-para {
@@ -99,8 +99,8 @@
 
 .card h3 {
   background: linear-gradient(270deg, #c89102 -202.05%, #624701 351.09%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
   font-size: 24px;
   margin-bottom: 1rem;
   font-weight: 700;

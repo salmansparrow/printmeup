@@ -25,8 +25,8 @@
   font-weight: 700;
   margin: 0;
   background: linear-gradient(270deg, #c89102 -202.05%, #624701 351.09%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
   white-space: nowrap; /* Prevent text wrapping */
   text-align: center;
 }

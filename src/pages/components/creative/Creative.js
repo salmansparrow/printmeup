@@ -30,7 +30,11 @@ function Creative() {
             <div className="card-icon-container">
               <div className="card-icon">
                 <div className="icon-bg">
-                  <Image src={premimum} className="card-icons" />
+                  <Image
+                    src={premimum}
+                    alt="icons-creative"
+                    className="card-icons"
+                  />
                 </div>
               </div>
               <div className="card-number">01</div>
@@ -50,7 +54,11 @@ function Creative() {
             <div className="card-icon-container">
               <div className="card-icon">
                 <div className="icon-bg">
-                  <Image src={premimum} className="card-icons" />
+                  <Image
+                    src={premimum}
+                    alt="icons-creative"
+                    className="card-icons"
+                  />
                 </div>
               </div>
               <div className="card-number">01</div>
@@ -71,7 +79,11 @@ function Creative() {
             <div className="card-icon-container">
               <div className="icon-bg">
                 <div className="card-icon">
-                  <Image src={premimum} className="card-icons" />
+                  <Image
+                    src={premimum}
+                    alt="icons-creative"
+                    className="card-icons"
+                  />
                 </div>
               </div>{" "}
               <div className="card-number">01</div>

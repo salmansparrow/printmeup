@@ -12,7 +12,7 @@ function Customize() {
       <div className="container ">
         <div className="row">
           <div className="col-md-6">
-            <div className="image-container">
+            <div className="customize-image-container">
               <Image
                 className="card-image"
                 src="/images/customize/image.svg" // Replace with your image path

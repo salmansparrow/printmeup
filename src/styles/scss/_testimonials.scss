@@ -24,8 +24,8 @@
     .subheading {
       font-size: 54px;
       background: linear-gradient(270deg, #c89102 -202.05%, #624701 351.09%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
       margin-bottom: 1rem;
     }
 
@@ -51,6 +51,8 @@
       display: flex;
       justify-content: center;
       margin-bottom: 1rem;
+      position: relative;
+      right: 120px;
 
       svg {
         margin: 0 0.2rem;
@@ -65,6 +67,8 @@
       margin-top: 1rem;
       padding: 0;
       list-style: none;
+      position: relative;
+      right: 140px;
 
       .dot {
         width: 10px;

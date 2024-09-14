@@ -3,7 +3,7 @@
   background-color: #161616;
 }
 
-.image-container {
+.customize-image-container {
   width: 100%;
   height: auto;
   margin-right: 2rem; /* Adds space between the image and icon sections */
@@ -30,8 +30,8 @@
   line-height: 1.2;
   text-align: center;
   background: linear-gradient(270deg, #c89102 -202.05%, #624701 351.09%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
   white-space: nowrap; /* Prevents breaking onto multiple lines */
 }
 
@@ -141,11 +141,11 @@
   }
 
   /* Scale down the image on small screens */
-  .image-container {
+  .customize-image-container {
     margin-right: 0; /* Remove margin on small screens */
   }
 
-  .image-container img {
+  .customize-image-container img {
     width: 100%; /* Ensure the image scales down */
     height: auto; /* Maintain aspect ratio */
   }

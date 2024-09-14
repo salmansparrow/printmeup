@@ -51,7 +51,7 @@ function AiSection() {
 
           {/* Right Column - Image */}
           <div className="col-md-6">
-            <div className="image-container">
+            <div className="ai-image-container">
               <Image
                 src="/images/aisection/image 2.png" // Corrected path
                 alt="ai-Image"

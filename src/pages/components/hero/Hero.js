@@ -26,7 +26,7 @@ function HeroSection() {
             />
             <button className="btn-inside-input">
               Generate
-              <Image src={icons} className="ms-2" />
+              <Image src={icons} alt="hero-icons" className="ms-2" />
             </button>
           </div>
         </div>

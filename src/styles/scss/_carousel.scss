@@ -1,16 +1,16 @@
 .carousel-accordion {
   display: flex;
-  flex-wrap: wrap; /* Wrap buttons if they don't fit in one line */
+  flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 1.5rem;
 }
 
 .category-btn {
-  padding: 0.5rem 1rem; /* Adjust padding for smaller screens */
+  padding: 0.5rem 1rem;
   background-color: black;
   border: 2px solid #c89102;
   color: #fff;
-  margin: 0.5rem; /* Ensure some space between buttons */
+  margin: 0.5rem;
   cursor: pointer;
   transition: background-color 0.3s ease, border-color 0.3s ease;
   border-radius: 14px;
@@ -19,7 +19,7 @@
 .category-btn.active {
   background: linear-gradient(90deg, #c89102 0%, #624701 100%);
   color: #fff;
-  border: transparent; /* Hide border by setting it to transparent */
+  border: transparent;
 }
 
 .carousel-section {
@@ -32,67 +32,77 @@
   color: #f2e2b9;
   margin-bottom: 0.5rem;
   font-weight: 600;
-  font-size: 2rem; /* Adjust for smaller screens */
+  font-size: 2rem;
 }
 
 .carousel-heading2 {
   font-weight: 700;
-  font-size: 2.5rem; /* Adjust for smaller screens */
+  font-size: 2.5rem;
   margin-bottom: 1rem;
   background: linear-gradient(270deg, #c89102 -202.05%, #624701 351.09%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
 }
 
 .carousel-para {
   margin: 0 auto;
   max-width: 1000px;
-  padding: 0 1rem; /* Padding for smaller screens */
+  padding: 0 1rem;
 
   p {
     font-weight: 400;
-    font-size: 1rem; /* Slightly smaller size for better readability on smaller screens */
+    font-size: 1rem;
     color: #f2e2b9;
     margin-bottom: 2rem;
   }
 }
+
 .carousel-images {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 500px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  max-width: 700px;
   margin: 0 auto;
 }
 
-.image-container {
-  flex: 1 1 calc(50% - 2rem); /* Two images per row with space */
-  margin: 0.5rem;
-  position: relative;
+.image-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
+.image-container {
+  position: relative;
+  overflow: hidden;
+  // border-radius: 10px;
+  background-color: #000;
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
   .carousel-images {
-    flex-direction: column; /* Single column on mobile */
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
-  .image-container {
-    flex: 1 1 100%; /* Full width on mobile */
+  .image-row {
+    flex-direction: column;
   }
 
   .category-btn {
-    padding: 0.5rem; /* Smaller padding for mobile */
-    margin: 0.25rem; /* Smaller margin for mobile */
+    padding: 0.5rem;
+    margin: 0.25rem;
   }
 
   .carousel-heading {
-    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    font-size: 1.5rem;
   }
 
   .carousel-heading2 {
-    font-size: 2rem; /* Adjust font size for smaller screens */
+    font-size: 2rem;
   }
 
   p {
-    font-size: 0.875rem; /* Adjust font size for smaller screens */
+    font-size: 0.875rem;
   }
 }

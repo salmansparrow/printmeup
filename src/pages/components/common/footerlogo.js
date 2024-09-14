@@ -4,7 +4,7 @@ import footerlogo from "/public/images/footer_logo.svg";
 function FooterLogo() {
   return (
     <>
-      <Image src={footerlogo} />
+      <Image src={footerlogo} alt="footer-logo" />
     </>
   );
 }

@@ -24,8 +24,8 @@
     line-height: 1.2; /* Keeps text closer together */
     text-align: center;
     background: linear-gradient(270deg, #c89102 -202.05%, #624701 351.09%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
     white-space: nowrap; /* Keeps the text on one line */
   }
 
