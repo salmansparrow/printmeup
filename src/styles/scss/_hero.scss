@@ -1,90 +1,110 @@
 /* Hero Section Styling */
 .hero-section {
   background: rgba(22, 22, 22, 1); /* Background color */
-  padding: 5rem 1rem; /* Add padding to top and bottom */
+  padding: 4rem 1rem; /* Adjust padding for better spacing */
   position: relative;
 }
 
 .content {
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
-/* Responsive Hero Headings */
+/* Hero Headings */
 .hero-heading-1,
 .hero-heading-3 {
-  font-size: calc(1.5rem + 4vw); /* Responsive size for headings */
-  margin: 0;
+  font-size: 3.5rem; /* Set a comfortable default size */
   font-weight: 600;
   color: rgba(242, 226, 185, 1);
-  white-space: nowrap; /* Prevent text wrapping */
   text-align: center;
 }
 
 .hero-heading-2 {
-  font-size: calc(2rem + 6vw); /* Larger size for the second heading */
+  font-size: 4rem; /* Set a comfortable size for the second heading */
   font-weight: 700;
   margin: 0;
   background: linear-gradient(270deg, #c89102 -202.05%, #624701 351.09%);
   background-clip: text;
   color: transparent;
-  white-space: nowrap; /* Prevent text wrapping */
   text-align: center;
+}
+
+/* Adjust font sizes for larger screens */
+@media (min-width: 1400px) {
+  .hero-heading-1,
+  .hero-heading-3 {
+    font-size: 4.5rem; /* Slightly increase size on larger screens */
+  }
+
+  .hero-heading-2 {
+    font-size: 6rem; /* Comfortable size for the second heading */
+  }
 }
 
 /* Media queries for further adjustments on smaller screens */
 @media (max-width: 1200px) {
   .hero-heading-1,
-  .hero-heading-2,
   .hero-heading-3 {
-    font-size: calc(1.3rem + 3vw);
+    font-size: 3.5rem;
+  }
+
+  .hero-heading-2 {
+    font-size: 5rem;
   }
 }
 
 @media (max-width: 992px) {
   .hero-heading-1,
-  .hero-heading-2,
   .hero-heading-3 {
-    font-size: calc(1.2rem + 3vw);
+    font-size: 3rem;
+  }
+
+  .hero-heading-2 {
+    font-size: 4rem;
   }
 }
 
 @media (max-width: 768px) {
   .hero-heading-1,
-  .hero-heading-2,
   .hero-heading-3 {
-    font-size: calc(1.1rem + 2.5vw);
+    font-size: 2.5rem;
+  }
+
+  .hero-heading-2 {
+    font-size: 3.5rem;
   }
 }
 
 @media (max-width: 576px) {
   .hero-heading-1,
-  .hero-heading-2,
   .hero-heading-3 {
-    font-size: calc(1rem + 2vw);
+    font-size: 1.5rem;
+  }
+
+  .hero-heading-2 {
+    font-size: 2rem;
   }
 }
 
 /* Responsive Hero Paragraphs */
 .hero-paragraphs-container {
   max-width: 100%;
-  margin: 0 auto;
+  margin: 1.5rem 0; /* Adjust margin for better spacing */
   display: flex;
-  justify-content: center; /* Center the paragraphs container */
+  justify-content: center;
+  flex-wrap: wrap; /* Ensure paragraphs wrap on smaller screens */
 }
 
 .hero-paragraphs {
-  max-width: auto;
-  margin-top: 1rem;
+  max-width: 900px; /* Max width for container */
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .hero-paragraph {
-  font-size: calc(0.8rem + 0.5vw);
+  font-size: 1rem; /* Set a smaller default size */
   font-weight: 600;
-  flex: 1;
-  margin: 0;
+  // flex: 1;
+  margin: 0 2rem;
   color: rgba(242, 226, 185, 1);
   text-align: center;
   padding: 0 1rem;
@@ -92,12 +112,23 @@
 
 @media (max-width: 768px) {
   .hero-paragraph {
-    font-size: calc(0.7rem + 0.5vw);
+    font-size: 0.9rem;
   }
 
   .hero-paragraphs {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-paragraph {
+    font-size: 0.8rem;
+    margin-bottom: 10px; /* Add margin to create spacing between lines */
+  }
+
+  .hero-paragraphs {
+    margin-top: 1rem; /* Adjust spacing for smaller screens */
   }
 }
 
@@ -115,8 +146,8 @@
   align-items: center;
   width: 100%;
   max-width: 900px;
-  margin: 0 auto;
-  margin-top: 40px;
+  // margin: 0 auto;
+  margin-top: 20xpx;
 }
 
 .form-control {
@@ -126,6 +157,12 @@
   font-size: 16px;
   background-color: black;
   border-radius: 30px;
+  outline: none;
+  &:focus {
+    background-color: #624701;
+    border-color: gba(242, 226, 185, 1);
+    outline: none;
+  }
 }
 
 .form-control::placeholder {
@@ -149,4 +186,72 @@
 
 .btn-inside-input:hover {
   background-color: #0056b3;
+}
+
+// image section
+
+.hero-name-section {
+  padding: 0; /* No padding on the outer container */
+  margin-top: 40px;
+}
+
+.hero-name-images-container {
+  display: flex;
+  justify-content: space-between; /* Ensure the images are spaced apart */
+  margin: 0;
+  padding: 20px 0;
+  gap: 20px; /* Add spacing between images */
+}
+
+/* Apply margin to the second image to shift it downward */
+.hero-name-images-container > div:nth-child(2) {
+  margin-top: 20px; /* Adjust this value to control how far down the second image will be */
+}
+
+.hero-name-images-container > div:nth-child(4) {
+  margin-top: 20px; /* Adjust this value to control how far down the second image will be */
+}
+.hero-name-images-container > div:nth-child(6) {
+  margin-top: 20px; /* Adjust this value to control how far down the second image will be */
+}
+/* Ensure the images fill the entire width of the container */
+.hero-name-images-container > div {
+  max-width: 290px; /* Max width to make sure the images are consistent */
+  box-sizing: border-box;
+}
+
+.hero-name-section {
+  padding-left: 0; /* Remove the padding on the left */
+  padding-right: 0; /* Remove the padding on the right */
+}
+
+@media screen and (max-width: 576px) {
+  .hero-name-images-container {
+    display: flex;
+    justify-content: space-between; /* Ensure the images are spaced apart */
+    margin: 0;
+    width: 390px;
+    padding: 20px 0;
+    gap: 20px; /* Add spacing between images */
+  }
+  .hero-name-images-container > div:nth-child(2) {
+    margin-top: 0; /* Adjust this value to control how far down the second image will be */
+  }
+
+  .hero-name-images-container > div:nth-child(4) {
+    margin-top: 0; /* Adjust this value to control how far down the second image will be */
+  }
+  .hero-name-images-container > div:nth-child(6) {
+    margin-top: 0; /* Adjust this value to control how far down the second image will be */
+  }
+  /* Ensure the images fill the entire width of the container */
+  .hero-name-images-container > div {
+    max-width: 290px; /* Max width to make sure the images are consistent */
+    box-sizing: border-box;
+  }
+
+  .hero-name-section {
+    padding-left: 0; /* Remove the padding on the left */
+    padding-right: 0; /* Remove the padding on the right */
+  }
 }
