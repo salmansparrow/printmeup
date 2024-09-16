@@ -5,8 +5,8 @@
   "devFiles": [],
   "ampDevFiles": [],
   "lowPriorityFiles": [
-    "static/BuUk4cBowHBKG41ZP81fr/_buildManifest.js",
-    "static/BuUk4cBowHBKG41ZP81fr/_ssgManifest.js"
+    "static/wQsI1h2lYJaQOLDSfz_EP/_buildManifest.js",
+    "static/wQsI1h2lYJaQOLDSfz_EP/_ssgManifest.js"
   ],
   "rootMainFiles": [],
   "pages": {
@@ -18,7 +18,7 @@
       "static/chunks/675-f6b4bb7aa5cb9513.js",
       "static/chunks/664-fe029c8b38e64ec1.js",
       "static/chunks/603-03afb06023eb853b.js",
-      "static/chunks/pages/index-0ea70a2d6454e483.js"
+      "static/chunks/pages/index-e1c976f522d3e47e.js"
     ],
     "/_app": [
       "static/chunks/webpack-8fa1640cc84ba8fe.js",
@@ -90,24 +90,18 @@
       "static/chunks/675-f6b4bb7aa5cb9513.js",
       "static/chunks/pages/components/customize/Customise-ec30850ee997d492.js"
     ],
-    "/components/customize/Icons": [
-      "static/chunks/webpack-8fa1640cc84ba8fe.js",
-      "static/chunks/framework-64ad27b21261a9ce.js",
-      "static/chunks/main-9de93270bb2ef944.js",
-      "static/chunks/pages/components/customize/Icons-32478fd6e0d93c12.js"
-    ],
     "/components/hero/Hero": [
       "static/chunks/webpack-8fa1640cc84ba8fe.js",
       "static/chunks/framework-64ad27b21261a9ce.js",
       "static/chunks/main-9de93270bb2ef944.js",
       "static/chunks/675-f6b4bb7aa5cb9513.js",
-      "static/chunks/pages/components/hero/Hero-0044b7d2240a6610.js"
+      "static/chunks/pages/components/hero/Hero-29d3aa8aa880d1c2.js"
     ],
-    "/components/hero/icons/icon.svg": [
+    "/components/hero/icons/icon": [
       "static/chunks/webpack-8fa1640cc84ba8fe.js",
       "static/chunks/framework-64ad27b21261a9ce.js",
       "static/chunks/main-9de93270bb2ef944.js",
-      "static/chunks/pages/components/hero/icons/icon.svg-1c74ffb52e95b79d.js"
+      "static/chunks/pages/components/hero/icons/icon-0d065c40156055c2.js"
     ],
     "/components/layout/Layout": [
       "static/chunks/webpack-8fa1640cc84ba8fe.js",

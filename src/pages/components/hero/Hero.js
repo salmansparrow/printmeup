@@ -1,6 +1,6 @@
 // import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import icons from "./icons/icon.svg";
+import Iconshero from "./icons/icon";
 
 function HeroSection() {
   // const sliderRef = useRef(null); // Create a ref for the slider
@@ -63,7 +63,7 @@ function HeroSection() {
             />
             <button className="btn-inside-input">
               Generate
-              <Image src={icons} alt="hero-icons" className="ms-2" />
+              <Image src={Iconshero} alt="hero-icons" className="ms-2" />
             </button>
           </div>
         </div>
