@@ -69,7 +69,9 @@ function HeroSection() {
         </div>
       </div>
 
-      {/* Hero slider section */}
+      <div></div>
+
+      <div></div>
       {/* Hero slider section */}
       <section className="hero-name-section ">
         <div className="hero-name-images-container d-flex">
