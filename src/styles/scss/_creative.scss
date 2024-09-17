@@ -118,6 +118,7 @@
   display: flex;
   align-items: center; /* Vertically align icon and number */
   margin-bottom: 1rem;
+  justify-content: space-between;
 }
 /* Circle background for icon */
 .icon-bg {

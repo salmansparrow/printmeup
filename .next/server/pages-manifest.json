@@ -1,1 +1,6 @@
-{"/_app":"pages/_app.js","/_document":"pages/_document.js","/api/hello":"pages/api/hello.js","/_error":"pages/_error.js","/components/aisection/AiSection":"pages/components/aisection/AiSection.html","/components/carousel/Carousel":"pages/components/carousel/Carousel.html","/components/common/Footer":"pages/components/common/Footer.html","/components/common/MainNavbar":"pages/components/common/MainNavbar.html","/components/common/righticon":"pages/components/common/righticon.html","/components/common/footerlogo":"pages/components/common/footerlogo.html","/components/creative/Creative":"pages/components/creative/Creative.html","/components/customize/Customise":"pages/components/customize/Customise.html","/components/hero/icons/icon":"pages/components/hero/icons/icon.html","/components/price/Price":"pages/components/price/Price.html","/components/layout/Layout":"pages/components/layout/Layout.html","/components/testimonials/Testimonials":"pages/components/testimonials/Testimonials.html","/":"pages/index.html","/components/hero/Hero":"pages/components/hero/Hero.html","/404":"pages/404.html"}
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js"
+}

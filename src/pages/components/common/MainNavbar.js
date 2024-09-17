@@ -41,7 +41,7 @@ function MainNavbar() {
             <li className="nav-item">
               <Link
                 href="/"
-                className={`nav-link ${
+                className={`nav-link navbar-nav-link ${
                   router.pathname === "/" ? "active" : ""
                 }`}
               >
@@ -51,7 +51,7 @@ function MainNavbar() {
             <li className="nav-item">
               <Link
                 href="/pricing"
-                className={`nav-link ${
+                className={`nav-link navbar-nav-link ${
                   router.pathname === "/pricing" ? "active" : ""
                 }`}
               >
@@ -62,7 +62,7 @@ function MainNavbar() {
             <li className="nav-item">
               <Link
                 href="/how-it-works"
-                className={`nav-link ${
+                className={`nav-link navbar-nav-link ${
                   router.pathname === "/how-it-works" ? "active" : ""
                 }`}
               >
@@ -73,7 +73,7 @@ function MainNavbar() {
             <li className="nav-item">
               <Link
                 href="/contact-us"
-                className={`nav-link ${
+                className={`nav-link navbar-nav-link ${
                   router.pathname === "/contact-us" ? "active" : ""
                 }`}
               >
